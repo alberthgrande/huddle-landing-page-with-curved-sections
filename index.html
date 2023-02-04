@@ -65,20 +65,18 @@
       <!-- screen-mockups -->
       <section class="screen__mockups-container container">
         <img src="./images/screen-mockups.svg" alt="" />
-      </section>
-
-      <!-- communities__container -->
-      <section class="communities__container container">
-        <div>
+        <div class="mockups__content">
           <div class="communities__formed">
             <!-- icon-communities -->
             <img src="./images/icon-communities.svg" alt="" />
-            <h2 class="heading__title">1.4k+ Communities Formed</h2>
+            <h3 class="heading__title">1.4k+</h3>
+            <p class="mockups__text">Communities Formed</p>
           </div>
           <div class="message__sent">
             <!-- icon-messages -->
             <img src="./images/icon-messages.svg" alt="" />
-            <h2 class="heading__title">2.7m+ Messages Sent</h2>
+            <h3 class="heading__title">2.7m+</h3>
+            <p class="mockups__text">Messages Sent</p>
           </div>
         </div>
       </section>
@@ -91,16 +89,16 @@
             srcset="./images/bg-section-top-mobile-1.svg"
           />
           <img
-            class="grow__bg-top"
+            class="bg__top"
             src="./images/bg-section-top-desktop-1.svg"
             alt=""
           />
         </picture>
 
-        <div class="grow__content">
-          <div>
+        <div class="grow__content card__content">
+          <div class="content__info">
             <h2 class="heading__title">Grow Together</h2>
-            <p>
+            <p class="text__content">
               Generate meaningful discussions with your audience and build a
               strong, loyal community. Think of the insightful conversations you
               miss out on with a feedback form.
@@ -116,7 +114,7 @@
             srcset="./images/bg-section-bottom-mobile-1.svg"
           />
           <img
-            class="grow__bg-bottom"
+            class="bg__bottom"
             src="./images/bg-section-bottom-desktop-1.svg"
             alt=""
           />
@@ -125,11 +123,11 @@
 
       <!-- flowing__container -->
       <section class="flowing__container container">
-        <div class="flowing__content">
+        <div class="flowing__content card__content">
           <img src="./images/illustration-flowing-conversation.svg" alt="" />
-          <div>
+          <div class="content__info">
             <h2 class="heading__title">Flowing Conversations</h2>
-            <p>
+            <p class="text__content">
               You wouldn't paginate a conversation in real life, so why do it
               online? Our threads have just-in-time loading for a more natural
               flow.
@@ -146,15 +144,15 @@
             srcset="./images/bg-section-top-mobile-2.svg"
           />
           <img
-            class="user__bg-top"
+            class="bg__top"
             src="./images/bg-section-top-desktop-2.svg"
             alt=""
           />
         </picture>
-        <div class="user__content">
-          <div>
+        <div class="user__content card__content">
+          <div class="content__info">
             <h2 class="heading__title">Your Users</h2>
-            <p class="text__info">
+            <p class="text__content">
               It takes no time at all to integrate Huddle with your app's
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
@@ -170,7 +168,7 @@
             srcset="./images/bg-section-bottom-mobile-2.svg"
           />
           <img
-            class="user__bg-bottom"
+            class="bg__bottom"
             src="./images/bg-section-bottom-desktop-2.svg"
             alt=""
           />
@@ -178,7 +176,7 @@
       </section>
 
       <section class="ready__container container">
-        <h2 class="heading__title">Ready To Build Your Community?</h2>
+        <h1 class="heading__title">Ready To Build Your Community?</h1>
         <div class="button__group">
           <button class="button">Get Started For Free</button>
         </div>
@@ -193,43 +191,54 @@
         />
         <img src="./images/bg-footer-top-desktop.svg" alt="" />
       </picture>
-      <section class="footer">
-        <!-- 18 -->
-        <img src="./images/logo.svg" alt="" />
-        <!-- bg-footer-top-desktop -->
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-        quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-        <!--  -->
-        <div>
-          <!-- 14 -->
-          <img src="./images/icon-phone.svg" alt="" />
-          Phone: +1-543-123-4567
+      <section class="footer__content">
+        <div class="footer__category contact">
+          <img class="footer__logo" src="./images/logo.svg" alt="" />
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <div class="contact__info">
+            <p class="phone__icon">Phone: +1-543-123-4567</p>
+            <p class="email__icon">example@huddle.com</p>
+          </div>
+          <div class="social__media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
         </div>
 
-        <div>
-          <!-- 12 -->
-          <img src="./images/icon-email.svg" alt="" />
-          example@huddle.com
+        <div class="footer__category newsletter">
+          <h4>Newsletter</h4>
+          <p class="footer__text">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+
+          <div class="email__form">
+            <p id="error__message"></p>
+            <input
+              class="email__field form__group"
+              type="email"
+              id="email"
+              placeholder="example@huddle.com"
+            />
+            <button class="button__form form__group" id="button">
+              Subscribe
+            </button>
+          </div>
         </div>
-        <div class="social__media">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-        <!--  -->
-        Newsletter To recieve tips on how to grow your community, sign up to our
-        weekly newsletter. We’ll never send you spam or pass on your email
-        address
-        <!--  -->
-        Subscribe
-        <!--  -->
       </section>
+
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Alberth Grande</a>.
       </p>
     </footer>
+
+    <script src="./js/validation.js"></script>
   </body>
 </html>
